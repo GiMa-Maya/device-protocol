@@ -183,6 +183,14 @@ enum MessageType {
 	MessageType_OsmosisMsgSwap = 1115 [(wire_in) = true];
 	MessageType_OsmosisSignedTx = 1116 [(wire_out) = true];
 
+ 	// MAYAChain
+	MessageType_MayachainGetAddress = 1200 [(wire_in) = true];
+	MessageType_MayachainAddress = 1201 [(wire_out) = true];
+	MessageType_MayachainSignTx = 1202 [(wire_in) = true];
+	MessageType_MayachainMsgRequest = 1203 [(wire_out) = true];
+	MessageType_MayachainMsgAck = 1204 [(wire_in) = true];
+	MessageType_MayachainSignedTx = 1205 [(wire_out) = true];
+
 }
 
 ////////////////////
